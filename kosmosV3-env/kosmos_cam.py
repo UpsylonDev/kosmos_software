@@ -3,6 +3,8 @@
 """ Camera KOSMOS
  D. Hanon 21 novembre 2020 """
 
+# Remplacer "kosmos2" aux lignes 72 et 81 par le nom d'utilisateur
+
 from threading import Thread, Event
 import subprocess
 import logging
@@ -65,8 +67,9 @@ class KosmosCam(Thread):
             os.chdir("..")
             os.chdir("..")
             os.chdir("..")
+            os.chdir("..")
             os.chdir("media")
-            os.chdir("pi")
+            os.chdir("kosmos2")
             os.chdir("00clef")
             os.chdir("Video")
             self._camera.start_recording(self._file_name)
@@ -75,8 +78,9 @@ class KosmosCam(Thread):
             os.chdir("..")
             os.chdir("..")
             os.chdir("home")
-            os.chdir("pi")
-            os.chdir("kospython")
+            os.chdir("kosmos2")
+            os.chdir("kosmos_software")
+            os.chdir("kosmosV3-env")
             self._camera.wait_recording(self._record_time)
             logging.info(f"Fin de l'enregistrement video {self._file_name}")
             self._start_again.wait()
