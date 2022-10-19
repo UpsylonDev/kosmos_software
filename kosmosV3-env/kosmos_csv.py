@@ -1,5 +1,8 @@
 #!/usr/bin/python
 # coding: utf-8
+
+# remplacer "kosmos2" aux lignes 41 et 53 par le nom d'utilisateur
+
 from datetime import datetime
 
 from threading import Thread
@@ -33,8 +36,9 @@ class kosmosCSV(Thread):
         os.chdir("..")
         os.chdir("..")
         os.chdir("..")
+        os.chdir("..")
         os.chdir("media")
-        os.chdir("pi")
+        os.chdir("kosmos2")
         os.chdir("00clef")
         os.chdir("CSV")
         self._cvs_file = open(self._file_name, 'w')
@@ -46,8 +50,9 @@ class kosmosCSV(Thread):
         os.chdir("..")
         os.chdir("..")
         os.chdir("home")
-        os.chdir("pi")
-        os.chdir("kospython")
+        os.chdir("kosmos2")
+        os.chdir("kosmos_software")
+        os.chdir("kosmosV3-env")
 
         self._press_sensor_ok = False
         try:
