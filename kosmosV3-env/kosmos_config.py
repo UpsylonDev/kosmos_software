@@ -1,5 +1,6 @@
 #!/usr/bin/python
 # coding: utf-8
+# remplacer "kosmos2" à la ligne 13 par le nom d'utilisateur
 
 import logging
 import configparser
@@ -9,7 +10,7 @@ from datetime import datetime
 
 
 CONF_FILE = "kosmos_config.ini"
-USB_ROOT_PATH = "/media/pi"
+USB_ROOT_PATH = "/media/kosmos2"
 BASIC_SECTION = "KOSMOS"
 
 
